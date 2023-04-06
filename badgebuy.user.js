@@ -153,7 +153,7 @@ function updatePrices() {
                     var total = 0;
                     var cards = $('.cardrow');
                     for(var i = 0; i < cards.length; i++) {
-                        total += parseInt($(cards[i]).data('price'), 10) * 5 / 100;
+                        total += parseInt($(cards[i]).data('price'), 10) * 1 / 100;
                     }
 
                     $('#buycardspanel').append('<br /><span style="font-weight: bold; display: inline-block; width: ' + $('.cardname').css('width') + '; padding-right: 10px; text-align: right">Total</span><b>' + g_CurrencyInfo.symbol_prefix + '<span id="totalprice">' + formatPrice(total.toFixed(2)) + '</span>' + g_CurrencyInfo.symbol_suffix +'</b><br /><br /><button type="button" id="buycardsbutton" class="btn_green_white_innerfade btn_medium_wide" style="padding: 10px 20px; margin-left: ' + ($('.cardname').css('width').replace('px', '') / 2) + 'px">PLACE ORDERS</button>');
@@ -198,7 +198,7 @@ function placeBuyOrder() {
     card.find('.cardprice')[0].innerHTML += ' - Placing buy order...';
     card.addClass('buying');
 
-    $.post('https://steamcommunity.com/market/createbuyorder/', {"sessionid": g_SessionID, "currency": g_Currency, "appid": 753, "market_hash_name": card.data('hashname'), "price_total": card.data('price')*5, "quantity": 5}, function(json) {
+    $.post('https://steamcommunity.com/market/createbuyorder/', {"sessionid": g_SessionID, "currency": g_Currency, "appid": 753, "market_hash_name": card.data('hashname'), "price_total": card.data('price')*1, "quantity": 1}, function(json) {
         setTimeout(placeBuyOrder, 500);
 
         if(json.success !== 1) {
