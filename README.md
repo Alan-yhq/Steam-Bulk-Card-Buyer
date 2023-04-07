@@ -4,6 +4,7 @@
 
 该项目使用 GPLv3 协议.
 
+[Greasy Fork](https://greasyfork.org/zh-CN/scripts/463445-steam-trading-cards-bulk-buyer)
 [源项目](https://github.com/panikajo/Steam-Bulk-Card-Buyer)
 
 ## 推荐使用场景
