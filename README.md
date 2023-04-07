@@ -1,31 +1,24 @@
 # Steam Bulk Card Buyer
 
-This user script adds a button to your Steam badge pages allowing you to buy all the cards you need to finish a badge from the Steam Market at once.
+该脚本用于 Steam 徽章一键购买自动合成。
 
-If you are running Firefox, you will need to install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/). If you're using Chrome, you will need to install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en). **This will not work as a Chrome extension (including dragging the .user.js file into the Extensions page).**
+该项目使用 GPLv3 协议.
 
-Licensed under GPLv3.
+[源项目](https://github.com/panikajo/Steam-Bulk-Card-Buyer)
 
-## [![Install](https://i.imgur.com/hKHfyWz.png)](https://github.com/Kxnrl/Steam-Bulk-Card-Buyer/raw/master/badgebuy.user.js)
+## 推荐使用场景
+
+1. 喜加一挂卡获得三张卡牌，使用 x1 模式自动补全剩余卡牌，提升至等级1.
+2. 然后使用 x4 mode 直升等级5.
+
+Enjoy it!
 
 ## FAQ
 
-- **Q: Why does a purchase show "Failure"?**
-- **A:** If a purchase fails, someone else probably bought the card before you were able to, or you don't have enough funds in your Steam Wallet.
+- **为什么一直提示 Loading...**
+- **A:** 可能为该卡牌在市场中无人出售或者网络错误。
 
-## Major Changes in 3.0.0
+## 3.5.0 更新
+- 先前版本的自动购买会无脑购买所有卡牌各 5 张，现将购买过程分开为 x1 和 x4.
 
-- Now a platform-independent user script instead of a Chrome extension
-- More verbose failure messages
-
-## Major Changes in 2.0.0
-
-- Now out of beta!
-- Added support for foils
-- Now won't show only some cards if you click the button while Enhanced Steam is loading links
-- Doesn't choke on special characters in card names anymore
-- Doesn't give up after a single failure anymore
-- Better, less confusing layout
-- Total decreases for each failed purchase, showing the amount you actually paid
-- Added reload failures button to retry when a purchase fails
-- Added reload page button when all purchases are complete
+[ChangeLogs](https://github.com/Alan-yhq/Steam-Bulk-Card-Buyer/blob/master/changelog.txt)

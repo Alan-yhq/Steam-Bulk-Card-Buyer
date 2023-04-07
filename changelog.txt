@@ -1,3 +1,6 @@
+3.5.0
+- 先前版本的自动购买会无脑购买所有卡牌各 5 张，现将购买过程分开为 x1 和 x4.
+
 3.4.4
 - Fixed regex failing when Steam puts space between currency and price
 
